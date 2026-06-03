@@ -68,6 +68,15 @@ function Flow() {
   return (
     <div className="app-container" ref={reactFlowWrapper}>
       <div className="bg-gradient-anim" />
+      <button
+        type="button"
+        onClick={() => {
+          window.location.href = "https://tight-amethyst-8cqo9ere.edgeone.app/";
+        }}
+        className="inline-flex items-center gap-2 rounded-lg border border-border bg-background px-4 py-2 text-sm font-medium text-foreground transition hover:bg-muted"
+      >
+        Volver
+      </button>
       <Toolbar />
       <ReactFlow
         nodes={nodes}
